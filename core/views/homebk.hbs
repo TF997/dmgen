@@ -1,0 +1,26 @@
+  <main>
+    <h1>DmGen</h1>
+    <section id="box">
+      {{#if msg}}
+      <p class="error-message">{{msg}}</p>
+      {{/if}}
+      <ul style="padding:0" id=stats>
+        <li>Stats:</li>
+        <li>Strength: {{baseStats.Strength}} ({{mod.Strength}}) </li>
+        <li>Dexterity: {{baseStats.Dexterity}} ({{mod.Dexterity}}) </li>
+        <li>Constitution: {{baseStats.Constitution}} ({{mod.Constitution}}) </li>
+        <li>Intelligence: {{baseStats.Intelligence}} ({{mod.Intelligence}}) </li>
+        <li>Wisdom: {{baseStats.Wisdom}} ({{mod.Wisdom}}) </li>
+        <li>Charisma: {{baseStats.Charisma}} ({{mod.Charisma}}) </li>
+      </ul>
+      <ul style="padding:0" id=SavingThrows>
+        <li>Saving Throws:</li>
+        <li>Strength: {{savingThrows.Strength}} </li>
+        <li>Dexterity: {{savingThrows.Dexterity}} </li>
+        <li>Constitution: {{savingThrows.Constitution}} </li>
+        <li>Intelligence: {{savingThrows.Intelligence}} </li>
+        <li>Wisdom: {{savingThrows.Wisdom}} </li>
+        <li>Charisma: {{savingThrows.Charisma}} </li>
+      </ul>
+    </section>
+  </main>

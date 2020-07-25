@@ -1,0 +1,47 @@
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link rel="stylesheet" href="{{__dirname}}/css/main.css">
+  </head>
+  <body>
+    <main>
+      <article id = header>
+        <h1>DmGen</h1>
+      </article>
+      <section id=gridcontainer>
+            <section id=baseStats>
+              <h2>Stats:</h2>
+              <ul>
+              {{#each baseStats}}
+                <li id=Stats>{{@key}}:  <p id=stat>{{this}}</p></li>
+              {{/each}}
+              </ul>
+            </section>
+          <section id=Mods>
+            <h2>Modifier:</h2>
+            <ul>
+            {{#each mod}}
+              <li id=mod>{{@key}}:  <p id=modder>{{this}}</p></li>
+            {{/each}}
+            </ul>
+          </section>
+          <section id=SavingThrows>
+            <h2>Saving Throws:</h2>
+            <ul >  
+              {{#each savingThrows}}
+                <li id=savingThrows>{{@key}}: <p id=save>{{this}}</p></li>
+              {{/each}}
+            </ul>
+          </section>
+          <section id=Skills>
+            <h2>Skills:</h2>
+            <ul>
+              {{#each skills}}
+                <li id=skills>{{@key}}: <p id=skill>{{this}}</p></li>
+              {{/each}}
+            </ul>
+          </section>
+      </section>
+    </main>
+  </body>
